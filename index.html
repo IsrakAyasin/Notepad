@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>          
+        <h1 style="font-size:30px; text-align:center;"> Notepad</h1>
+        <form id="newNotes">
+            <textarea type="text" 
+            id="newNoteInput" rows="100" cols="241" autofocus
+            placeHolder="start typing" width="500"></textarea>
+        </form>
+    </header>
+    <canvas id="myCanvas">
+        Your browser does not support the canvas tag.
+        </canvas>
+        
+        <script>
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 80, 80);
+        </script>
+</body>
+</html>
